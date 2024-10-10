@@ -10,6 +10,7 @@ public class BankAccount {
             return false; 
         }
     }
+
     public boolean deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -18,8 +19,23 @@ public class BankAccount {
             return false;  
         }
     }
+  
+  private double balance;
+    
+    public BankAccount(double val) {
+    	this.balance = val;
+    }
+    public double accountBalance() {
+        return this.balance;
+    }
+    
     public static void main(String [] args)
     {
     	
     }
+
+	
+    
+
+
 }
