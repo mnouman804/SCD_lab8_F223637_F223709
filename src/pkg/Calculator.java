@@ -13,7 +13,7 @@ import javax.swing.JTextField;
 public class Calculator {
     public int addition(int a, int b) {
         if (a < 0 || b < 0) {
-            throw new IllegalArgumentException("Inputs must be non-negative.");
+            throw new IllegalArgumentException("abc");
         }
         return a + b;
     }
