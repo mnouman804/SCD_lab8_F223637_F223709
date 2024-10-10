@@ -15,6 +15,7 @@ public class Calculator {
         if (a < 0 || b < 0) {
 
             throw new IllegalArgumentException("Lines must not be negative");
+
         }
         return a + b;
     }
@@ -31,9 +32,8 @@ public class Calculator {
     private JButton addButton, multiplyButton;
 
     public Calculator() {
-        // Set up the frame and layout
         frame = new JFrame("Calculator");
-        frame.setLayout(new GridLayout(4, 2, 10, 10));  // Using GridLayout for better organization
+        frame.setLayout(new GridLayout(4, 2, 10, 10));  
 
         JLabel num1Label = new JLabel("Number 1:");
         JLabel num2Label = new JLabel("Number 2:");
